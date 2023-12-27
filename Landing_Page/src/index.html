@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../dist/custom.css" rel="stylesheet">
   <title>Martial Gym</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
@@ -15,9 +16,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-bg">
+  <nav class="w-100 h-16 bg-primary flex ">
+    <h1 class="text-3xl font-bold font-header leading-[4rem] ps-4">MG</h1>
+    <ul class="grow flex justify-self-center leading-[4rem] justify-center gap-5 font-bold">
+      <li><a class="text-accent inline-block h-[4rem] hover:border-b-4 border-accent" href="#">ABOUT</a></li>
+      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent" href="#">MEMBERSHIP</a></li>
+      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent" href="#">CLASSES</a></li>
+      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent" href="#">PRICING</a></li>
+      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent" href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="bg-hero-img bg-no-repeat w-100 hero-height bg-center bg-cover flex justify-center items-center">
+      <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none [text-shadow:_2px_2px_4px_#0000]">Martial Gym</h1>
+    </div>
+  </section>
 </body>
 </html>
