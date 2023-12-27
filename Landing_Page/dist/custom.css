@@ -5,3 +5,13 @@
 .text-border {
   text-shadow: -4px 4px 4px #0000005a, 4px 4px 4px #0000005a, 4px -4px 4px #0000005a, -4px -4px 4px #0000005a; 
 }
+
+.main-carousel { width: 100vw; }
+
+.carousel-cell { width: 100% }
+
+.hero-line-height {
+  margin: 0px;
+  padding: 0px;
+  line-height: calc(100vh - 4rem);
+}

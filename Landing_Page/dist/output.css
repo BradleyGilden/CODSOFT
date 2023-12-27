@@ -544,6 +544,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -560,24 +568,8 @@ video {
   height: 4rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[7rem\] {
-  height: 7rem;
-}
-
-.h-\[300px\] {
-  height: 300px;
+.w-screen {
+  width: 100vw;
 }
 
 .grow {
@@ -625,8 +617,16 @@ video {
   background-color: rgb(240 192 0 / var(--tw-bg-opacity));
 }
 
-.bg-hero-img {
+.bg-hero-img1 {
   background-image: url('../images/gymlayout.jpg');
+}
+
+.bg-hero-img2 {
+  background-image: url('../images/gymlayout2.jpg');
+}
+
+.bg-hero-img3 {
+  background-image: url('../images/deadlift.jpg');
 }
 
 .bg-cover {
@@ -657,21 +657,9 @@ video {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.font-body {
-  font-family: Inter, sans-serif;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-\[8rem\] {
-  font-size: 8rem;
-}
-
-.text-\[3rem\] {
-  font-size: 3rem;
 }
 
 .text-\[4rem\] {
@@ -680,10 +668,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .leading-\[4rem\] {
@@ -695,66 +679,9 @@ video {
   color: rgb(176 23 25 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(240 192 0 / var(--tw-text-opacity));
-}
-
-.text-\[3\] {
-  color: 3;
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.drop-shadow-xl {
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.\[text-shadow\:_0_1px_0_rgb\(0_0_0_\/_40\%\)\] {
-  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
-}
-
-.\[text-shadow\:_0_1px_0_\#0000\] {
-  text-shadow: 0 1px 0 #0000;
-}
-
-.\[text-shadow\:_2px_1px_0_\#0000\] {
-  text-shadow: 2px 1px 0 #0000;
-}
-
-.\[text-shadow\:_2px_2px_0_\#0000\] {
-  text-shadow: 2px 2px 0 #0000;
-}
-
-.\[text-shadow\:_2px_2px_4px_\#0000\] {
-  text-shadow: 2px 2px 4px #0000;
-}
-
-.hover\:cursor-none:hover {
-  cursor: none;
-}
-
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
-.hover\:cursor-default:hover {
-  cursor: default;
 }
 
 .hover\:border-b-4:hover {
@@ -764,10 +691,6 @@ video {
 @media (min-width: 640px) {
   .sm\:text-\[6rem\] {
     font-size: 6rem;
-  }
-
-  .sm\:text-\[\] {
-    color: ;
   }
 }
 

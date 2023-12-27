@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
-<head>
+<link>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
   <link href="../dist/custom.css" rel="stylesheet">
+  <script defer src="./index.js"></script>
   <title>Martial Gym</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
@@ -15,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body class="bg-bg">
   <nav class="w-100 h-16 bg-primary flex ">
@@ -28,8 +32,14 @@
     </ul>
   </nav>
   <section>
-    <div class="bg-hero-img bg-no-repeat w-100 hero-height bg-center bg-cover flex justify-center items-center">
-      <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border">Martial Gym</h1>
+    <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border absolute z-10 w-screen hero-line-height">Martial Gym</h1>
+    <div class="main-carousel w-screen">
+      <div class="carousel-cell bg-hero-img1 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
+      </div>
+      <div class="carousel-cell bg-hero-img2 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
+      </div>
+      <div class="carousel-cell bg-hero-img3 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
+      </div>
     </div>
   </section>
 </body>
