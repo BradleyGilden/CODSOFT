@@ -16,31 +16,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- flickity -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- gsap -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 </head>
 <body class="bg-bg">
-  <nav class="w-100 h-16 bg-primary flex ">
-    <h1 class="text-3xl font-bold font-header leading-[4rem] ps-4">MG</h1>
-    <ul class="grow hidden justify-self-center leading-[4rem] justify-center gap-5 font-bold sm:flex">
-      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">ABOUT</a></li>
-      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">MEMBERSHIP</a></li>
-      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CLASSES</a></li>
-      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">PRICING</a></li>
-      <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-  <section class="hero-height">
-    <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border absolute z-10 w-screen top-[calc(50%_-_5rem)]">Martial Gym</h1>
-    <div class="main-carousel w-screen">
-      <div class="carousel-cell bg-hero-img1 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
+  <div class="cover w-full overflow-x-hidden">
+    <nav class="w-100 h-16 bg-primary flex items-center">
+      <h1 class="text-3xl font-bold font-header leading-[4rem] ps-4">MG</h1>
+      <ul class="grow hidden justify-self-center leading-[4rem] justify-center gap-5 font-bold sm:flex">
+        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">ABOUT</a></li>
+        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">MEMBERSHIP</a></li>
+        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CLASSES</a></li>
+        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CONTACT</a></li>
+      </ul>
+      <button type="button" class="hidden bg-primary border-black border-[2px] rounded-xl justify-self-end h-[2rem] mr-4 sm:block px-2 font-header font-semibold hover:text-primary hover:bg-black transition-all duration-300">Register</button>
+    </nav>
+    <section class="hero-height w-full relative overflow-x-hidden">
+      <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border absolute z-10 w-screen top-[calc(50%_-_5rem)]">Martial Gym</h1>
+      <div class="main-carousel flex relative">
+        <div class="carousel-cell bg-hero-img1 bg-no-repeat w-full hero-height bg-center bg-cover">
+        </div>
+        <div class="carousel-cell bg-hero-img2 bg-no-repeat w-full hero-height bg-center bg-cover">
+        </div>
+        <div class="carousel-cell bg-hero-img3 bg-no-repeat w-full hero-height bg-center bg-cover">
+        </div>
       </div>
-      <div class="carousel-cell bg-hero-img2 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
-      </div>
-      <div class="carousel-cell bg-hero-img3 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
-      </div>
-    </div>
-  </section>
+    </section>
+    <section id="#about">
+      <h1 class="text-white font-header text-center mt-8 text-4xl mb-6">About</h1>
+      <article class="flex flex-col justify-center w-10/12 sm:w-8-12 lg:w-6/12 mx-auto items-center gap-5 lg:flex-row">
+        <img class='h-80 rounded-md' src="../images/deadlif2.jpg" alt="deadlift">
+        <p class="text-white font-body">At Martial Gymn, we pride ourselves on offering top-of-the-line equipment that caters to all fitness levels. Whether you're a seasoned athlete or just starting your fitness journey, our gym is equipped with the latest in cardio, strength training, and functional fitness technology. Our commitment to excellence ensures that you have access to the tools you need to sculpt your body, improve your endurance, and achieve overall well-being.<br><br>Dive into a diverse range of classes designed to keep your workouts exciting and effective. Unleash your inner warrior with our martial arts and boxing classes, where you'll master techniques that challenge both body and mind. For a holistic approach to fitness, join our Pilates and yoga classes that focus on strength, flexibility, and mindfulness. Our certified instructors bring passion and expertise to each session, creating an energizing and motivating atmosphere.</p>
+      </article>
+    </section>
+    <section id="membership">
+      <h1 class="text-white font-header text-center mt-8 text-4xl mb-6">Membership</h1>
+    </section>
+  </div>
 </body>
 </html>

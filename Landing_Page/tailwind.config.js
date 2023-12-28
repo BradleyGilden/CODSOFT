@@ -16,6 +16,9 @@ module.exports = {
         'primary': '#f0c000',
         'secondary': '#b8bbb9',
         'accent': '#b01719'
+      },
+      fontSize: {
+        '4xl': '3rem'
       }
     },
     fontFamily: {
