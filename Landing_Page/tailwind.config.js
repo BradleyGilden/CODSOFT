@@ -26,9 +26,9 @@ module.exports = {
       'body': ['Inter', 'sans-serif']
     },
     backgroundImage: {
-      'hero-img1': "url('../images/gymlayout.jpg')",
-      'hero-img2': "url('../images/gymlayout2.jpg')",
-      'hero-img3': "url('../images/deadlift.jpg')",
+      'hero-img1': "url('https://i.ibb.co/HdwJTgP/gymlayout.jpg')",
+      'hero-img2': "url('https://i.ibb.co/Qn5SYBc/gymlayout2.jpg')",
+      'hero-img3': "url('https://i.ibb.co/MkTWhxm/deadlift.jpg')",
     }
 
   },
