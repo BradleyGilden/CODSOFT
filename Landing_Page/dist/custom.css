@@ -3,7 +3,7 @@
 }
 
 .text-border {
-  text-shadow: -4px 4px 4px #0000005a, 4px 4px 4px #0000005a, 4px -4px 4px #0000005a, -4px -4px 4px #0000005a; 
+  text-shadow: 0 0 8px #00000c;
 }
 
 .main-carousel { width: 100vw; }
