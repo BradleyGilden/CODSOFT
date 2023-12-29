@@ -23,7 +23,8 @@ module.exports = {
     },
     fontFamily: {
       'header': ['"Montserrat Alternates"', 'sans-serif'],
-      'body': ['Inter', 'sans-serif']
+      'body': ['Inter', 'sans-serif'],
+      'number': ['"Cormorant Garamond"', 'sans-serif']
     },
     backgroundImage: {
       'hero-img1': "url('https://i.ibb.co/HdwJTgP/gymlayout.jpg')",

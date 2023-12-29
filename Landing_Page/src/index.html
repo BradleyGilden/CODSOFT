@@ -15,9 +15,13 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- gsap -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <!--flickity-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
 <body class="bg-bg">
   <div class="cover w-full overflow-x-hidden">
@@ -28,17 +32,18 @@
         <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">MEMBERSHIP</a></li>
         <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CLASSES</a></li>
         <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CONTACT</a></li>
+        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none sm:hidden" href="#">REGISTER</a></li>
       </ul>
       <button type="button" class="hidden bg-primary border-black border-[2px] rounded-xl justify-self-end h-[2rem] mr-4 sm:block px-2 font-header font-semibold hover:text-primary hover:bg-black transition-all duration-300">Register</button>
     </nav>
     <section class="hero-height w-full relative overflow-x-hidden">
       <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border absolute z-10 w-screen top-[calc(50%_-_5rem)]">Martial Gym</h1>
-      <div class="main-carousel flex relative">
-        <div class="carousel-cell bg-hero-img1 bg-no-repeat w-full hero-height bg-center bg-cover">
+      <div class="main-carousel w-screen">
+        <div class="carousel-cell bg-hero-img1 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
         </div>
-        <div class="carousel-cell bg-hero-img2 bg-no-repeat w-full hero-height bg-center bg-cover">
+        <div class="carousel-cell bg-hero-img2 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
         </div>
-        <div class="carousel-cell bg-hero-img3 bg-no-repeat w-full hero-height bg-center bg-cover">
+        <div class="carousel-cell bg-hero-img3 bg-no-repeat w-screen hero-height bg-center bg-cover flex justify-center items-center">
         </div>
       </div>
     </section>
@@ -51,6 +56,23 @@
     </section>
     <section id="membership">
       <h1 class="text-white font-header text-center mt-8 text-4xl mb-6">Membership</h1>
+      <article class="flex justify-around w-10/12 sm:w-8-12 lg:w-6/12 mx-auto">
+        <div class="price1 rounded-xl border-primary border-4 w-[27%] flex flex-col">
+          <h1 class="price-num text-primary text-[4rem] text-center font-number">$15<br><span class="text-lg font-header mx-4"> / monthly</span></h1>
+          <p class="text-secondary font-header mx-4 mb-4">Includes access to all gym equipment 24/7. A personal trainer will be assigned free of charge for your first 3 months to get you started</p>
+          <h1 class="price-foot text-bg text-3xl text-center font-header bg-primary font-medium mt-auto">BASIC</h1>
+        </div>
+        <div class="price1 rounded-xl border-primary border-4 w-[27%] flex flex-col">
+          <h1 class="price-num text-primary text-[4rem] text-center font-number">$15<span class="inline text-lg font-header mx-4"> / pm</span></h1>
+          <p class="text-secondary font-header mx-4 mb-4">BASIC + Access to any single class of your choosing with discounts at the food bar</p>
+          <h1 class="price-foot text-bg text-3xl text-center font-header bg-primary font-medium mt-auto">GOLD</h1>
+        </div>
+        <div class="price1 rounded-xl border-primary border-4 w-[27%] flex flex-col">
+          <h1 class="price-num text-primary text-[4rem] text-center font-number my-0 py-0">$15<span class="text-lg font-header mx-4"> / monthly</span></h1>
+          <p class="text-secondary font-header mx-4 mb-4">Includes access to all gym equipment 24/7. A personal trainer will be assigned free of charge for your first 3 months to get you started</p>
+          <h1 class="price-foot text-bg text-3xl text-center font-header bg-primary font-medium mt-auto">BASIC</h1>
+        </div>
+      </article>
     </section>
   </div>
 </body>

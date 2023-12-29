@@ -15,3 +15,17 @@
   padding: 0px;
   line-height: calc(100vh - 4rem);
 }
+
+.price1:hover {
+  border-color: #b8bbb9;
+  .price-num {
+    color: #b8bbb9;
+  }
+  p {
+    color: #b8bbb9;
+  }
+
+  .price-foot {
+    background-color: #b8bbb9;
+  }
+}
