@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const socials = document.querySelectorAll('.socials');
   const navItems = document.querySelectorAll('.nav-menu');
+  const menu = document.getElementById('menu');
+  const menuList = document.getElementById('menu-list');
   var elem = document.querySelector(".main-carousel");
   var flkty = new Flickity(elem, {
     // options
@@ -36,4 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.to(window, { duration: 2, scrollTo: item.dataset.id, ease: 'power2' });
     })
   }
+
+  menu.addEventListener('click', () => {
+    if (menuList.classList.contains('hidden')) {
+      menuList.classList.remove('hidden');
+      menuList.classList.add('flex');
+    }
+    else if (menuList.classList.contains('flex')) {
+      menuList.classList.remove('flex');
+      menuList.classList.add('hidden');
+    }
+  })
+
 });

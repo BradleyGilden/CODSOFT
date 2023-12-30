@@ -19,6 +19,7 @@
   <!-- gsap -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
   <!--flickity-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -26,16 +27,17 @@
 </head>
 <body class="bg-bg">
   <div class="cover w-full overflow-x-hidden">
-    <nav class="w-100 h-16 bg-primary flex items-center">
+    <nav class="w-full h-16 bg-primary flex items-center justify-between">
       <h1 class="text-3xl font-bold font-header leading-[4rem] ps-4">MG</h1>
-      <ul class="grow hidden justify-self-center leading-[4rem] justify-center gap-5 font-bold sm:flex">
-        <li><a data-id="#about" class="nav-menu inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">ABOUT</a></li>
-        <li><a data-id="#membership" class="nav-menu inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">MEMBERSHIP</a></li>
-        <li><a data-id="#classes" class="nav-menu inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CLASSES</a></li>
-        <li><a data-id="#contact" class="nav-menu inline-block h-[4rem] hover:border-b-4 border-accent select-none" href="#">CONTACT</a></li>
-        <li><a class="inline-block h-[4rem] hover:border-b-4 border-accent select-none sm:hidden" href="#">REGISTER</a></li>
-      </ul>
+      <div id="menu-list" class="transition-all duration-300 hidden mt-44 sm:mt-0 right-0 bg-primary sm:bg-transparent px-4 py-2 rounded-bl-xl grow sm:flex absolute z-20 flex-col justify-self-center leading-[4rem] justify-center gap-2 sm:gap-5 font-bold sm:flex-row sm:relative">
+        <a data-id="#about" class="nav-menu inline-block leading-4  sm:leading-[4rem] hover:border-b-4 border-accent select-none" href="#">ABOUT</a>
+        <a data-id="#membership" class="nav-menu inline-block leading-4 sm:leading-[4rem] hover:border-b-4 border-accent select-none" href="#">MEMBERSHIP</a>
+        <a data-id="#classes" class="nav-menu inline-block leading-4 sm:leading-[4rem]  hover:border-b-4 border-accent select-none" href="#">CLASSES</a>
+        <a data-id="#contact" class="nav-menu  inline-block leading-4 sm:leading-[4rem]  hover:border-b-4 border-accent select-none" href="#">CONTACT</a>
+        <a class="leading-4 inline-block  hover:border-b-4 border-accent select-none sm:hidden" href="#">REGISTER</a>
+      </div>
       <button type="button" class="hidden bg-primary border-black border-[2px] rounded-xl justify-self-end h-[2rem] mr-4 sm:block px-2 font-header font-semibold hover:text-primary hover:bg-black transition-all duration-300">Register</button>
+      <img id="menu" class="w-12 justify-self-end pr-4 sm:hidden" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
     </nav>
     <section class="hero-height w-full relative overflow-x-hidden mb-10">
       <h1 class="p-6 text-center text-[4rem] sm:text-[6rem] md:text-[8rem] font-header font-bold text-primary cursor-default select-none text-border absolute z-10 w-screen top-[calc(50%_-_5rem)]">Martial Gym</h1>
