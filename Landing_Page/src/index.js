@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const socials = document.querySelectorAll('.socials');
+  const navItems = document.querySelectorAll('.nav-menu');
   var elem = document.querySelector(".main-carousel");
   var flkty = new Flickity(elem, {
     // options
@@ -14,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     friction: 0.2,
   });
 
-  const socials = document.querySelectorAll('.socials');
 
   for (let social of socials) {
     social.addEventListener('mouseover', () => {
@@ -26,6 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
       let source = social.src;
       source = source.replace("f0c000", "b8bbb9");
       social.src = source;
+    })
+  }
+
+  for (let item of navItems) {
+    item.addEventListener('click', () => {
+      console.log(item.dataset.id)
+      gsap.to(window, { duration: 2, scrollTo: item.dataset.id, ease: 'power2' });
     })
   }
 });
