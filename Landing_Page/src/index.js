@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("menu");
   const menuList = document.getElementById("menu-list");
   var elem = document.querySelector(".main-carousel");
+  // animate carousel
   var flkty = new Flickity(elem, {
     // options
     cellAlign: "left",
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     friction: 0.2,
   });
 
+  // highlight social icons when hovered
   for (let social of socials) {
     social.addEventListener("mouseover", () => {
       let source = social.src;
@@ -31,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // for in-page scroll links
   for (let item of navItems) {
     item.addEventListener("click", () => {
       console.log(item.dataset.id);
@@ -42,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // mobile display menu event
   menu.addEventListener("click", () => {
     if (menuList.classList.contains("hidden")) {
       menuList.classList.remove("hidden");
