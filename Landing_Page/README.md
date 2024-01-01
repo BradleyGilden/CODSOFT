@@ -6,7 +6,6 @@ To view the template see [martialgym.vercel.app](https://martialgym.vercel.app/)
 
 ### Supports both mobile and desktop view
 <br>
-<h2 align="center">Desktop</h1>
 <table  align="center">
     <col width="100%">
     <col width="100%">
