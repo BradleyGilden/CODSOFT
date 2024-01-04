@@ -6,16 +6,16 @@
 
 html {
   font-family: "Inter", sans-serif;
-  background-color: #fff;
+  background-color: #121212;
 }
 
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #121212;
   font-weight: 400;
   font-style: normal;
-  color: #373737;
+  color: #f2f2f2;
   font-size: 14px;
 }
 
@@ -37,7 +37,7 @@ input:focus,
 }
 
 a {
-  color: #000;
+  color: #f2f2f2;
 }
 
 iframe {
@@ -46,15 +46,15 @@ iframe {
 }
 
 ::-moz-selection {
-  background: #000;
+  background: #f2f2f2;
   text-shadow: none;
-  color: #fff;
+  color: #121212;
 }
 
 ::selection {
-  background: #000;
+  background: #f2f2f2;
   text-shadow: none;
-  color: #fff;
+  color: #121212;
 }
 
 img {
@@ -80,7 +80,7 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   background-color: transparent;
   background-image: none;
-  color: #000;
+  color: #f2f2f2;
 }
 
 /* 1.2 Typography */
@@ -108,7 +108,7 @@ img {
   top: 0;
   width: 100%;
   z-index: 5;
-  background-color: #fff;
+  background-color: #121212;
   padding: 70px 0;
   transition-delay: 0s;
   transition-duration: 0.4s;
@@ -118,7 +118,7 @@ img {
 
 .pf-header.pf-fixed-header {
   padding: 20px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
 }
 
 .pf-header-inner {
@@ -131,7 +131,7 @@ img {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 3px;
-  color: #000;
+  color: #f2f2f2;
   display: flex;
   align-items: center;
 }
@@ -142,9 +142,9 @@ img {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #000;
+  background-color: #f2f2f2;
   border-radius: 4px;
-  color: #fff;
+  color: #121212;
   font-size: 22px;
   font-weight: 600;
   text-align: center;
@@ -152,7 +152,7 @@ img {
 }
 
 .pf-logo:hover {
-  color: #000;
+  color: #f2f2f2;
 }
 
 .pf-social {
@@ -172,7 +172,7 @@ img {
 
 .pf-social li a {
   border-radius: 100%;
-  color: #fff;
+  color: #121212;
   width: 24px;
   height: 24px;
   background-color: #f26464;
@@ -184,8 +184,8 @@ img {
 }
 
 .pf-social li a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #121212;
 }
 
 .profile-image {
@@ -210,7 +210,7 @@ img {
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
-  color: #000;
+  color: #f2f2f2;
 }
 
 .pf-numbervalulist {
@@ -251,7 +251,7 @@ img {
 .pf-heading {
   display: inline-block;
   font-weight: 700;
-  color: #000;
+  color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
@@ -261,7 +261,7 @@ img {
 }
 
 .pf-about-section p {
-  color: #373737;
+  color: #f2f2f2;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
@@ -275,16 +275,36 @@ img {
   line-height: 13px;
   font-weight: 600;
   letter-spacing: 3px;
+  color: #121212;
+  padding: 17px 30px;
+  border: 2px solid #121212;
+  border-radius: 60px;
+}
+
+.pf-button:hover {
+  background-color: #121212;
+  color: #f26464;
+}
+
+.pf-button2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
   color: #f26464;
   padding: 17px 30px;
   border: 2px solid #f26464;
   border-radius: 60px;
 }
 
-.pf-button:hover {
+.pf-button2:hover {
   background-color: #f26464;
-  color: #fff;
+  color: #121212;
 }
+
+
 
 .pf-arrow-button i {
   display: inline-block;
@@ -307,10 +327,10 @@ img {
 
 .pf-skills-list li {
   display: inline-block;
-  color: #373737;
+  color: #f2f2f2;
   font-size: 16px;
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #121212;
   border: 1px solid #d7d7d7;
   border-radius: 27px;
   margin-right: 15px;
@@ -341,14 +361,14 @@ img {
 }
 
 span.pf-year {
-  color: #373737;
+  color: #f2f2f2;
   font-size: 14px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
 span.pf-department {
-  color: #373737;
+  color: #f2f2f2;
   font-weight: 500;
   font-size: 18px;
   padding-bottom: 30px;
@@ -384,7 +404,7 @@ span.pf-department {
   border-radius: 100%;
   width: 8px;
   height: 8px;
-  background-color: #373737;
+  background-color: #f2f2f2;
 }
 
 .pf-work-section {
@@ -395,7 +415,7 @@ span.pf-department {
   padding-left: 70px;
   padding-top: 40px;
   padding-right: 70px;
-  background-color: #f6f8fa;
+  background-color: #2b2b2b;
   margin-bottom: 40px;
 }
 
@@ -406,7 +426,7 @@ span.pf-department {
 }
 
 .pf-work-tilte {
-  color: #000;
+  color: #f2f2f2;
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
@@ -430,7 +450,7 @@ span.pf-department {
 
 .pf-work-det-title {
   font-weight: 600;
-  color: #000;
+  color: #f2f2f2;
   font-size: 48px;
   margin-bottom: 20px;
 }
@@ -438,7 +458,7 @@ span.pf-department {
 .pf-work-det-dep {
   display: block;
   font-weight: 600;
-  color: #000;
+  color: #f2f2f2;
   font-size: 18px;
 }
 
@@ -480,11 +500,11 @@ span.pf-department {
   border-radius: 100%;
   width: 8px;
   height: 8px;
-  background-color: #373737;
+  background-color: #f2f2f2;
 }
 
 .pf-footer {
-  background-color: #000;
+  background-color: #f26464;
   padding: 120px 0;
 }
 
@@ -503,14 +523,14 @@ span.pf-department {
 }
 
 .pf-footer section h4 {
-  color: #fff;
+  color: #121212;
   font-size: 48px;
   font-weight: 700;
 }
 
 .pf-footer section p {
   letter-spacing: 1.13px;
-  color: #fff;
+  color: #121212;
   font-size: 18px;
   margin-bottom: 40px;
 }
