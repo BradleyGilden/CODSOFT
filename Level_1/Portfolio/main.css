@@ -103,7 +103,7 @@ img {
   height: auto;
 }
 
-.ds-header {
+.pf-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -116,18 +116,18 @@ img {
   transition-timing-function: ease;
 }
 
-.ds-header.ds-fixed-header {
+.pf-header.pf-fixed-header {
   padding: 20px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
-.ds-header-inner {
+.pf-header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.ds-logo {
+.pf-logo {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 3px;
@@ -136,7 +136,7 @@ img {
   align-items: center;
 }
 
-.ds-logo span {
+.pf-logo span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,26 +151,26 @@ img {
   margin-right: 12px;
 }
 
-.ds-logo:hover {
+.pf-logo:hover {
   color: #000;
 }
 
-.ds-social {
+.pf-social {
   list-style: none;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.ds-social li {
+.pf-social li {
   margin-left: 12px;
 }
 
-.ds-social li:first-child {
+.pf-social li:first-child {
   margin-left: 0;
 }
 
-.ds-social li a {
+.pf-social li a {
   border-radius: 100%;
   color: #fff;
   width: 24px;
@@ -183,7 +183,7 @@ img {
   font-size: 16px;
 }
 
-.ds-social li a:hover {
+.pf-social li a:hover {
   background-color: #000;
   color: #fff;
 }
@@ -192,12 +192,12 @@ img {
   background-color: #f26464;
 }
 
-.ds-banner section {
+.pf-banner section {
   padding-left: 70px;
   padding-right: 100px;
 }
 
-.ds-banner section h1 span {
+.pf-banner section h1 span {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -206,14 +206,14 @@ img {
   padding-bottom: 30px;
 }
 
-.ds-banner section h1 {
+.pf-banner section h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
   color: #000;
 }
 
-.ds-numbervalulist {
+.pf-numbervalulist {
   list-style: none;
   display: flex;
   align-items: center;
@@ -223,32 +223,32 @@ img {
   margin-top: 60px;
 }
 
-.ds-numbervalulist li {
+.pf-numbervalulist li {
   margin-right: 60px;
 }
 
-.ds-numbervalulist li:last-child {
+.pf-numbervalulist li:last-child {
   margin-right: 0;
 }
 
-.ds-numbervalulist strong {
+.pf-numbervalulist strong {
   display: block;
   color: #f26464;
   font-size: 36px;
   font-weight: 800;
 }
 
-.ds-numbervalulist span {
+.pf-numbervalulist span {
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.ds-about-section {
+.pf-about-section {
   padding-top: 60px;
   padding-bottom: 120px;
 }
 
-.ds-heading {
+.pf-heading {
   display: inline-block;
   font-weight: 700;
   color: #000;
@@ -260,7 +260,7 @@ img {
   margin-bottom: 23px;
 }
 
-.ds-about-section p {
+.pf-about-section p {
   color: #373737;
   font-size: 24px;
   line-height: 40px;
@@ -268,7 +268,7 @@ img {
   margin-bottom: 60px;
 }
 
-.ds-button {
+.pf-button {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
@@ -281,21 +281,21 @@ img {
   border-radius: 60px;
 }
 
-.ds-button:hover {
+.pf-button:hover {
   background-color: #f26464;
   color: #fff;
 }
 
-.ds-arrow-button i {
+.pf-arrow-button i {
   display: inline-block;
   vertical-align: middle;
 }
 
-.ds-skills-section {
+.pf-skills-section {
   padding-bottom: 105px;
 }
 
-.ds-skills-list {
+.pf-skills-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -305,7 +305,7 @@ img {
   margin-top: 11px;
 }
 
-.ds-skills-list li {
+.pf-skills-list li {
   display: inline-block;
   color: #373737;
   font-size: 16px;
@@ -318,56 +318,56 @@ img {
   font-weight: 500;
 }
 
-.ds-experience-section {
+.pf-experience-section {
   padding-bottom: 120px;
 }
 
-.ds-experience-list section {
+.pf-experience-list section {
   padding-right: 70px;
 }
 
-.ds-experience-list {
+.pf-experience-list {
   padding-top: 15px;
 }
 
-.ds-officename {
+.pf-officename {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-.ds-experience-list span {
+.pf-experience-list span {
   display: block;
 }
 
-span.ds-year {
+span.pf-year {
   color: #373737;
   font-size: 14px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-span.ds-department {
+span.pf-department {
   color: #373737;
   font-weight: 500;
   font-size: 18px;
   padding-bottom: 30px;
 }
 
-.ds-experience-list p {
+.pf-experience-list p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
 }
 
-.ds-experience-list ul {
+.pf-experience-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
   padding-top: 10px;
 }
 
-.ds-experience-list ul li {
+.pf-experience-list ul li {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -376,7 +376,7 @@ span.ds-department {
   margin-bottom: 20px;
 }
 
-.ds-experience-list ul li:before {
+.pf-experience-list ul li:before {
   content: "";
   position: absolute;
   left: 0;
@@ -387,11 +387,11 @@ span.ds-department {
   background-color: #373737;
 }
 
-.ds-work-section {
+.pf-work-section {
   padding-bottom: 80px;
 }
 
-.ds-work-list {
+.pf-project-ls {
   padding-left: 70px;
   padding-top: 40px;
   padding-right: 70px;
@@ -399,12 +399,13 @@ span.ds-department {
   margin-bottom: 40px;
 }
 
-.ds-work-list section {
+.pf-project-ls section {
   padding-top: 20px;
   padding-right: 120px;
+  padding-bottom: 60px;
 }
 
-.ds-work-tilte {
+.pf-work-tilte {
   color: #000;
   font-size: 30px;
   line-height: 36px;
@@ -412,58 +413,58 @@ span.ds-department {
   margin-bottom: 30px;
 }
 
-.ds-work-list p {
+.pf-project-ls p {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
 }
 
-.ds-work-list .ds-button {
+.pf-project-ls .pf-button {
   margin-top: 20px;
 }
 
-.ds-work-det-hed {
+.pf-work-det-hed {
   padding-top: 42px;
   padding-bottom: 80px;
 }
 
-.ds-work-det-title {
+.pf-work-det-title {
   font-weight: 600;
   color: #000;
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-.ds-work-det-dep {
+.pf-work-det-dep {
   display: block;
   font-weight: 600;
   color: #000;
   font-size: 18px;
 }
 
-.ds-work-content-sec {
+.pf-work-content-sec {
   padding: 100px 0;
 }
 
-.ds-work-content-sec p {
+.pf-work-content-sec p {
   font-size: 18px;
   line-height: 36px;
   margin-bottom: 30px;
 }
 
-.ds-work-content-sec h2 {
+.pf-work-content-sec h2 {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.ds-work-content-sec ul {
+.pf-work-content-sec ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.ds-work-content-sec li {
+.pf-work-content-sec li {
   font-size: 18px;
   line-height: 36px;
   padding-left: 28px;
@@ -471,7 +472,7 @@ span.ds-department {
   margin-bottom: 20px;
 }
 
-.ds-work-content-sec li:before {
+.pf-work-content-sec li:before {
   content: "";
   position: absolute;
   left: 0;
@@ -482,16 +483,16 @@ span.ds-department {
   background-color: #373737;
 }
 
-.ds-footer {
+.pf-footer {
   background-color: #000;
   padding: 120px 0;
 }
 
-.ds-footer section {
+.pf-footer section {
   padding-bottom: 97px;
 }
 
-.ds-footer section span {
+.pf-footer section span {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   font-weight: 700;
@@ -501,184 +502,184 @@ span.ds-department {
   padding-bottom: 20px;
 }
 
-.ds-footer section h4 {
+.pf-footer section h4 {
   color: #fff;
   font-size: 48px;
   font-weight: 700;
 }
 
-.ds-footer section p {
+.pf-footer section p {
   letter-spacing: 1.13px;
   color: #fff;
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-.ds-copyright {
+.pf-copyright {
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
   font-size: 16px;
 }
 
-.ds-copyright a {
+.pf-copyright a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.ds-copyright a:hover {
+.pf-copyright a:hover {
   color: #f26464;
 }
 
 @media (max-width: 768px) {
-  .ds-header,
-  .ds-header.ds-fixed-header {
+  .pf-header,
+  .pf-header.pf-fixed-header {
     padding: 15px 0;
   }
 
-  .ds-banner,
-  .ds-about-section,
-  .ds-skills-section,
-  .ds-experience-section,
-  .ds-work-section,
-  .ds-work-details-section {
+  .pf-banner,
+  .pf-about-section,
+  .pf-skills-section,
+  .pf-experience-section,
+  .pf-work-section,
+  .pf-work-details-section {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .ds-logo {
+  .pf-logo {
     font-size: 0;
   }
 
-  .ds-banner figure {
+  .pf-banner figure {
     padding: 30px 0;
   }
 
-  .ds-banner section {
+  .pf-banner section {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .ds-banner section h1 span {
+  .pf-banner section h1 span {
     padding-bottom: 0;
   }
 
-  .ds-banner section h1,
-  .ds-work-det-title {
+  .pf-banner section h1,
+  .pf-work-det-title {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .ds-numbervalulist {
+  .pf-numbervalulist {
     margin-top: 20px;
   }
 
-  .ds-numbervalulist li {
+  .pf-numbervalulist li {
     margin-right: 30px;
   }
 
-  .ds-numbervalulist strong {
+  .pf-numbervalulist strong {
     font-size: 30px;
   }
 
-  .ds-numbervalulist span {
+  .pf-numbervalulist span {
     font-size: 14px;
   }
 
-  .ds-about-section {
+  .pf-about-section {
     padding-bottom: 60px;
   }
 
-  .ds-about-section p,
-  .ds-work-content-sec p,
-  .ds-work-content-sec li {
+  .pf-about-section p,
+  .pf-work-content-sec p,
+  .pf-work-content-sec li {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 30px;
   }
 
-  .ds-skills-list li {
+  .pf-skills-list li {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 14px;
   }
 
-  .ds-skills-section .col-12,
-  .ds-experience-list .col-12 {
+  .pf-skills-section .col-12,
+  .pf-experience-list .col-12 {
     margin-bottom: 40px;
   }
 
-  .ds-skills-section,
-  .ds-work-section,
-  .ds-experience-section {
+  .pf-skills-section,
+  .pf-work-section,
+  .pf-experience-section {
     padding-bottom: 0;
   }
 
-  .ds-experience-list section {
+  .pf-experience-list section {
     padding-right: 0;
   }
 
-  .ds-work-list {
+  .pf-project-ls {
     padding: 30px;
   }
 
-  .ds-work-list p {
+  .pf-project-ls p {
     font-size: 15px;
     line-height: 30px;
   }
 
-  .ds-footer {
+  .pf-footer {
     padding: 60px 10px;
   }
 
-  .ds-footer section h4 {
+  .pf-footer section h4 {
     font-size: 40px;
   }
 
-  .ds-copyright {
+  .pf-copyright {
     font-size: 14px;
   }
 
-  .ds-footer section {
+  .pf-footer section {
     padding-bottom: 30px;
   }
 
-  .ds-button {
+  .pf-button {
     padding: 11px 10px;
   }
 
-  .ds-work-details-section {
+  .pf-work-details-section {
     padding-top: 30px;
   }
 
-  .ds-work-det-title {
+  .pf-work-det-title {
     margin-bottom: 7px;
   }
 
-  .ds-work-content-sec h2 {
+  .pf-work-content-sec h2 {
     font-size: 20px;
   }
 
-  .ds-work-content-sec {
+  .pf-work-content-sec {
     padding: 30px 0;
   }
 
-  .ds-work-list section {
+  .pf-project-ls section {
     padding-right: 0;
     padding-bottom: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .ds-work-list section {
+  .pf-project-ls section {
     padding-right: 30px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .ds-banner section {
+  .pf-banner section {
     padding-right: 0;
   }
 
-  .ds-work-list section {
+  .pf-project-ls section {
     padding-right: 30px;
     padding-bottom: 60px;
   }
