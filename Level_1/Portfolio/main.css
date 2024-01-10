@@ -145,8 +145,8 @@ img {
 
 .pf-header.pf-fixed-header {
   padding: 20px 0;
-  -webkit-box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
-          box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
+  -webkit-box-shadow: 0px 0px 20px #5e56f5;
+          box-shadow: 0px 0px 20px #5e56f5;
 }
 
 .pf-header-inner {
