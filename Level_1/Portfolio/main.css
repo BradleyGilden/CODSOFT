@@ -224,7 +224,7 @@ img {
   color: #121212;
   width: 24px;
   height: 24px;
-  background-color: #f55656;
+  background-color: #5e56f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +247,7 @@ img {
   border-radius: 82% 70% 34% 83% / 53% 82% 46% 100%;
   -webkit-animation: animateImg 8s linear infinite;
           animation: animateImg 8s linear infinite;
-  background-color: #f55656;
+  background-color: #5e56f5;
 }
 
 @-webkit-keyframes animateImg {
@@ -334,7 +334,7 @@ img {
 
 .pf-numbervalulist strong {
   display: block;
-  color: #f55656;
+  color: #5e56f5;
   font-size: 36px;
   font-weight: 800;
 }
@@ -356,7 +356,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
-  border-bottom: 3px solid #f55656;
+  border-bottom: 3px solid #5e56f5;
   padding-bottom: 7px;
   margin-bottom: 23px;
 }
@@ -384,7 +384,7 @@ img {
 
 .pf-button:hover {
   background-color: #121212;
-  color: #f55656;
+  color: #5e56f5;
 }
 
 .pf-button2 {
@@ -394,14 +394,14 @@ img {
   line-height: 13px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #f55656;
+  color: #5e56f5;
   padding: 17px 30px;
-  border: 2px solid #f55656;
+  border: 2px solid #5e56f5;
   border-radius: 60px;
 }
 
 .pf-button2:hover {
-  background-color: #f55656;
+  background-color: #5e56f5;
   color: #121212;
 }
 
@@ -610,7 +610,7 @@ span.pf-department {
 }
 
 .pf-footer {
-  background-color: #f55656;
+  background-color: #5e56f5;
   padding: 120px 0;
 }
 
@@ -652,7 +652,7 @@ span.pf-department {
 }
 
 .pf-copyright a:hover {
-  color: #f55656;
+  color: #5e56f5;
 }
 
 @media (max-width: 768px) {
