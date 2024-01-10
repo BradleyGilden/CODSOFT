@@ -1,6 +1,9 @@
-/*--------------------------------------------------------------
->>> IMPORTS:
-----------------------------------------------------------------*/
+/*
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -29,11 +32,20 @@ input:focus,
 .transition {
   text-decoration: none;
   outline: none;
-  transition-delay: 0s;
-  transition-duration: 0.4s;
-  transition-property: all;
-  transition-timing-function: ease;
-  box-shadow: none;
+  -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+      transition-delay: 0s;
+  -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+  -webkit-transition-property: all;
+    -o-transition-property: all;
+      transition-property: all;
+  -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+  -webkit-box-shadow: none;
+      box-shadow: none;
 }
 
 a {
@@ -58,7 +70,9 @@ iframe {
 }
 
 .pro1, .pro2, .pro3 {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   opacity: 0.1;
 }
 
@@ -115,21 +129,36 @@ img {
   z-index: 5;
   background-color: #121212;
   padding: 70px 0;
-  transition-delay: 0s;
-  transition-duration: 0.4s;
-  transition-property: all;
-  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+      transition-delay: 0s;
+  -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+  -webkit-transition-property: all;
+    -o-transition-property: all;
+      transition-property: all;
+  -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+      transition-timing-function: ease;
 }
 
 .pf-header.pf-fixed-header {
   padding: 20px 0;
-  box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
+  -webkit-box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
+          box-shadow: 0px 0px 20px rgba(212, 95, 95, 0.25);
 }
 
 .pf-header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pf-logo {
@@ -137,14 +166,24 @@ img {
   font-size: 18px;
   letter-spacing: 3px;
   color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pf-logo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   background-color: #f2f2f2;
@@ -162,9 +201,14 @@ img {
 
 .pf-social {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pf-social li {
@@ -181,9 +225,15 @@ img {
   width: 24px;
   height: 24px;
   background-color: #f26464;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font-size: 16px;
 }
@@ -195,8 +245,28 @@ img {
 
 .profile-image {
   border-radius: 82% 70% 34% 83% / 53% 82% 46% 100%;
-  animation: animateImg 8s linear infinite;
+  -webkit-animation: animateImg 8s linear infinite;
+          animation: animateImg 8s linear infinite;
   background-color: #f26464;
+}
+
+@-webkit-keyframes animateImg {
+  0% {
+    border-radius: 82% 70% 34% 83% / 53% 82% 46% 100%;
+  }
+
+  33% {
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  }
+
+  66% {
+    border-radius: 51% 83% 63% 89% / 100% 72% 59% 76%;
+  }
+
+  100% {
+    border-radius: 82% 70% 34% 83% / 53% 82% 46% 100%;
+  }
+
 }
 
 @keyframes animateImg {
@@ -241,9 +311,14 @@ img {
 
 .pf-numbervalulist {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 60px;
@@ -345,9 +420,14 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 11px;
 }
 
