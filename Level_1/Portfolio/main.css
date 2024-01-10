@@ -22,6 +22,25 @@ body {
   font-size: 14px;
 }
 
+/*scroll bar styles*/
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e56f5;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #443fb1;
+}
+
 a,
 a:hover,
 a:focus,
@@ -122,6 +141,7 @@ img {
   height: auto;
 }
 
+/*                          NAVBAR/ HEADER                               */
 .pf-header {
   position: fixed;
   top: 0;
@@ -249,7 +269,7 @@ img {
           animation: animateImg 8s linear infinite;
   background-color: #5e56f5;
 }
-
+/*                        ANIMATE BORDER BLOB                  */
 @-webkit-keyframes animateImg {
   0% {
     border-radius: 82% 70% 34% 83% / 53% 82% 46% 100%;
@@ -654,7 +674,7 @@ span.pf-department {
 .pf-copyright a:hover {
   color: #5e56f5;
 }
-
+/*                        HEADER                      */
 @media (max-width: 768px) {
   .pf-header,
   .pf-header.pf-fixed-header {
@@ -721,7 +741,7 @@ span.pf-department {
     line-height: 30px;
     margin-bottom: 30px;
   }
-
+/*                       SKILLS SECTION                      */
   .pf-skills-list li {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -743,6 +763,8 @@ span.pf-department {
     padding-right: 0;
   }
 
+/*                            PROJECTS LIST                 */
+
   .pf-project-ls {
     padding: 30px;
   }
@@ -752,6 +774,7 @@ span.pf-department {
     line-height: 30px;
   }
 
+/*                      FOOTER                              */
   .pf-footer {
     padding: 60px 10px;
   }
