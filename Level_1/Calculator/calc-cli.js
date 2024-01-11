@@ -20,6 +20,8 @@ process.stdin.on('data', function (data) {
   console.log(calculation)
   calculation = cleanup(calculation);
   console.log(calculation);
+  calculation = filterOperations(calculation);
+  console.log(calculation)
 });
 
 process.stdin.on('end', function () {
@@ -60,7 +62,7 @@ function cleanup(calculation) {
         } else {
           calc[i] = parseInt(calc[i]);
         }
-      } else if (isNaN(calc[i]) && !ignore.includes(calc[i])) {
+      } else if (isNaN(calc[i]) && !ignore.includes(calc[i])) { // handle invalid inputs
         throw new Error('Incorrect type');
       }
     }
@@ -72,6 +74,23 @@ function cleanup(calculation) {
   }
 }
 
-// function filterOperations(calculation) {
+function filterOperations(calculation) {
+  let operatorCount = 0;
+  let highest = null;
+  let calc = calculation;
+  const operators = ['-', '+', '/', '*'];
 
-// }
+  for (let i = 0; i < calc.length; i++) {
+    if (operators.includes(calc[i])) {
+      operatorCount++;
+      highest = operators.indexOf(calc[i]) > operators.indexOf(highest) ? calc[i]: highest;
+    } else {
+      operatorCount = 0;
+      highest = null;
+    }
+    if (highest && operatorCount > 1 && !isNaN(calc[i + 1])) {
+      calc.splice(i - operatorCount + 1, operatorCount, highest);
+    }
+  }
+  return calc;
+}
