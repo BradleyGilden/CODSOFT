@@ -26,6 +26,22 @@ process.stdin.on('end', function () {
   console.log('Good Bye !!! :)');
 });
 
-function filterNumArray() {
+function mergeOperators(calculation) {
   // for filtering nums
+  let chunk = [];
+  const operators = ['+', '-', '*', '/'];
+  let filterCalc = calculation;
+
+  try {
+    for (let num of calculation) {
+      if (isNaN(num) && !(num in operators)) {
+        throw new Exception(`Incorrect Operation ${num}`)
+      }
+    }
+  } catch (err) {
+    console.log(err);
+    filterCalc = [];
+  } finally {
+
+  }
 }
