@@ -4,6 +4,13 @@ As part of CODSOFT Internship, I created this landing page template with Tailwin
 
 To view the template see [martialgym.vercel.app](https://martialgym.vercel.app/)
 
+## Tools
+
+* Tailwind CSS -> to view styles locally run `npm install`
+* HTML
+* Vanilla JS
+
+
 ### Supports both mobile and desktop view
 <br>
 <table  align="center">
