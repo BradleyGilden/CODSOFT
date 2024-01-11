@@ -17,8 +17,8 @@ process.stdin.on('data', function (data) {
     process.stdin.emit('end');
   }
   calculation = calculation.split(/\s+/);
-  calculation = calculation.join('');
-  calculation = calculation.split('');
+  console.log(calculation)
+  calculation = cleanup(calculation);
   console.log(calculation);
 });
 
@@ -26,22 +26,52 @@ process.stdin.on('end', function () {
   console.log('Good Bye !!! :)');
 });
 
-function mergeOperators(calculation) {
-  // for filtering nums
-  let chunk = [];
-  const operators = ['+', '-', '*', '/'];
-  let filterCalc = calculation;
-
+function cleanup(calculation) {
+  /* cleans up equation by converting the strings to ints and floats and
+  removes excess operators at the ends */
+  let calc = calculation;
+  let opcount = 0;
+  const ignore = ['*', '+', '/', '-'];
   try {
-    for (let num of calculation) {
-      if (isNaN(num) && !(num in operators)) {
-        throw new Exception(`Incorrect Operation ${num}`)
+    for (let i = 0; i < calc.length; i++) {
+      // keep track on number of operations encountered so we can remove them later if theres excess
+      if (ignore.includes(calc[i])) {
+        opcount += 1;
+      } else {
+        opcount = 0;
+      }
+      // if a number is preceeded by a '-', make it negative
+      if (calc[i] === '-' && !isNaN(calc[i + 1])) {
+        if (calc[i + 1].includes('.')) {
+          calc.splice(i, 2, parseFloat(`-${calc[i + 1]}`));
+        } else {
+          calc.splice(i, 2, parseInt(`-${calc[i + 1]}`));
+        }
+      } else if ((ignore.includes(calc[i])) && i === 0 ) { // removes excess operators at start
+        calc.splice(i, 1);
+        // go back to first index and try again
+        i--;
+      } else if ((ignore.includes(calc[i])) && i === calc.length - 1 ) { // removes excess operators at the end
+        calc.splice(i - opcount + 1, opcount);
+        break;
+      } else if (!isNaN(calc[i])) {
+        if (calc[i].includes('.')) {
+          calc[i] = parseFloat(calc[i]);
+        } else {
+          calc[i] = parseInt(calc[i]);
+        }
+      } else if (isNaN(calc[i]) && !ignore.includes(calc[i])) {
+        throw new Error('Incorrect type');
       }
     }
   } catch (err) {
-    console.log(err);
-    filterCalc = [];
+    console.log(err.message);
+    calc = [];
   } finally {
-
+    return calc
   }
 }
+
+// function filterOperations(calculation) {
+
+// }
