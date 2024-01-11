@@ -8,7 +8,9 @@ process.stdin.setEncoding('utf8');
 
 console.log('Please enter calculation (press Ctrl+D or enter EOF to end):');
 
+// continuosly read input from stdin
 process.stdin.on('data', function (data) {
+  // remove white spaces and newlines at the ends
   let calculation = data.trim();
 
   if (calculation === 'exit' || calculation === 'EOF') {
