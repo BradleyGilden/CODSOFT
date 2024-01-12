@@ -16,11 +16,11 @@ process.stdin.on('data', function (data) {
   if (calculation === 'exit' || calculation === 'EOF') {
     process.stdin.emit('end');
   }
+  // remove spaces and trailing newlines
   calculation = calculation.split(/\s+/);
-  console.log(calculation)
   calculation = cleanup(calculation);
-  console.log(calculation);
   calculation = filterOperations(calculation);
+  calculation = bodmas(calculation);
   console.log(calculation)
 });
 
@@ -35,15 +35,15 @@ process.stdin.on('end', function () {
  */
 function cleanup(calculation) {
   let calc = calculation;
-  let opcount = 0;
+  let opCount = 0;
   const ignore = ['*', '+', '/', '-'];
   try {
     for (let i = 0; i < calc.length; i++) {
       // keep track on number of operations encountered so we can remove them later if theres excess
       if (ignore.includes(calc[i])) {
-        opcount += 1;
+        opCount += 1;
       } else {
-        opcount = 0;
+        opCount = 0;
       }
       // if a number is preceeded by a '-', make it negative
       if (calc[i] === '-' && !isNaN(calc[i + 1]) && isNaN(calc[i - 1])) {
@@ -52,13 +52,13 @@ function cleanup(calculation) {
         } else {
           calc.splice(i, 2, parseInt(`-${calc[i + 1]}`));
         }
-        opcount = 0;
+        opCount = 0;
       } else if ((ignore.includes(calc[i])) && i === 0 ) { // removes excess operators at start
         calc.splice(i, 1);
         // go back to first index and try again
         i--;
       } else if ((ignore.includes(calc[i])) && i === calc.length - 1 ) { // removes excess operators at the end
-        calc.splice(i - opcount + 1, opcount);
+        calc.splice(i - opCount + 1, opCount);
         break;
       } else if (!isNaN(calc[i])) {
         if (calc[i].includes('.')) {
@@ -81,28 +81,68 @@ function cleanup(calculation) {
 /**
  * filterOperations - if operations are entered in succession this function will determine the operations
  * that take the most precidence
- * precidence order= *, /, +, -
+ * precidence order= /, *, +, -
  * Returns: list of operands and filtered operations
  */
 function filterOperations(calculation) {
-  let operatorCount = 0;
+  let opCount = 0;
   let highest = null;
   let calc = calculation;
-  const operators = ['-', '+', '/', '*'];
+  const operators = ['-', '+', '*', '/'];
 
   for (let i = 0; i < calc.length; i++) {
     if (operators.includes(calc[i])) {
-      operatorCount++;
+      opCount++;
+      // find operator of highest precidence for current consecutive sequence of operators
       highest = operators.indexOf(calc[i]) > operators.indexOf(highest) ? calc[i]: highest;
     } else {
-      operatorCount = 0;
+      opCount = 0;
       highest = null;
     }
-    if (highest && operatorCount > 1 && !isNaN(calc[i + 1])) {
-      calc.splice(i - operatorCount + 1, operatorCount, highest);
+    if (highest && opCount > 1 && !isNaN(calc[i + 1])) {
+      calc.splice(i - opCount + 1, opCount, highest);
       // reset operator count since a number is encountered next
-      operatorCount = 0;
+      opCount = 0;
     }
   }
   return calc;
+}
+
+/**
+ * calculate - perform basic calculations
+ * @param {int | float} n1  - first operand
+ * @param {String} operation  - operation [+ , * , -, /]
+ * @param {int | float} n2 - second operand
+ */
+function calculate(n1, operation, n2) {
+  switch (operation) {
+    case '-':
+      return n1 - n2;
+    case '+':
+      return n1 + n2;
+    case '*':
+      return n1 * n2;
+    case '/':
+      return n1 / n2;
+    }
+}
+
+/**
+ * bodmas - performs calculations in order of basic bodmas operations
+ */
+function bodmas(calculation) {
+  const operations = ['/', '*', '+', '-']
+  let calc = calculation;
+
+  if (calc.length === 0) return '';
+  // in order of bodmas operations
+  for (let j of operations) {
+    for (let i = 0; i < calc.length && calc.includes(j); i++) {
+      // if current index contains current operation
+      if (calc[i] === j) {
+        calc.splice(i - 1, 3, calculate(calc[i - 1], calc[i], calc[i + 1]))
+      }
+    }
+  }
+  return calc[0];
 }
