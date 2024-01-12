@@ -4,7 +4,7 @@ This is CODSOFT's final Level 1 project which is a web based calculator
 
 ## Tools
 
-* Tailwind CSS - to download and view styles run `npm install` in the projects root
+* Tailwind CSS
 * HTML
 * Vanilla JS
 
