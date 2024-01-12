@@ -1,12 +1,12 @@
 # Martial Gym Landing Page
 
-As part of CODSOFT Internship, I created this landing page template with Tailwind CSS, HTML and Vanilla JavaScript for a fictional gym franchise.
+As part of CODSOFT Internship, I created this landing page template for a fictional gym franchise.
 
-To view the template see [martialgym.vercel.app](https://martialgym.vercel.app/)
+To view the template see [martialgym.vercel.app](https://martialgym.vercel.app/) or open [src/index.html](./src/index.html) in the browser
 
 ## Tools
 
-* Tailwind CSS -> to view styles locally run `npm install`
+* Tailwind CSS
 * HTML
 * Vanilla JS
 
