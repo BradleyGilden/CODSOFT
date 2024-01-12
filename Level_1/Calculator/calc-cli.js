@@ -103,6 +103,7 @@ function filterOperations(calculation) {
       calc.splice(i - opCount + 1, opCount, highest);
       // reset operator count since a number is encountered next
       opCount = 0;
+      highest = null;
     }
   }
   return calc;
@@ -141,6 +142,8 @@ function bodmas(calculation) {
       // if current index contains current operation
       if (calc[i] === j) {
         calc.splice(i - 1, 3, calculate(calc[i - 1], calc[i], calc[i + 1]))
+        // iterate back as to not miss the next operation
+        i --;
       }
     }
   }
