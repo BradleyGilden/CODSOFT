@@ -9,12 +9,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- STYLES -->
   <link href="./output.css" rel="stylesheet">
+  <style>
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #1c1c1e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #6F34DC;
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #6F34DC;
+    }
+
+  </style>
 </head>
 <body class="bg-bg grid place-items-center min-h-screen w-screen">
   <div class="calculator flex flex-col h-[75%] w-[calc(100vh/2)] bg-bg justify-center ">
-    <div class="screen bg-secondary h-32 mx-5">
+    <div class="screen bg-primary h-[20%] mx-5">
+      <div type="text" class="w-[100%] h-[40%] text-[1.25rem] px-1 font-robm py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-accent2">1+2+3</div>
+      <div type="text" class="w-[100%] h-[60%] text-[2.5rem] px-1 font-robm py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-fg text-end">500000000</div>
     </div>
-    <div class="numpad grid grid-cols-4 gap-2 p-5">
+    <div class="numpad grid grid-cols-4 gap-2 p-5 h-[70%]">
       <div class="bg-accent2 cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-xl font-inter col-span-2 font-bold">CE</div>
       <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[1.5rem] leading-[1.75rem]  font-inter font-bold">/</div>
       <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[2rem] leading-[1.75rem] font-inter font-bold">+</div>
