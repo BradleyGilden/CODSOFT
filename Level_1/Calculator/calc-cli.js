@@ -28,9 +28,12 @@ process.stdin.on('end', function () {
   console.log('Good Bye !!! :)');
 });
 
+/* 
+ * cleanup - cleans up equation by converting the strings to ints and floats and
+ * removes excess operators at the ends
+ * Returns: list of int/float operands with trailing operations removed
+ */
 function cleanup(calculation) {
-  /* cleans up equation by converting the strings to ints and floats and
-  removes excess operators at the ends */
   let calc = calculation;
   let opcount = 0;
   const ignore = ['*', '+', '/', '-'];
@@ -43,12 +46,13 @@ function cleanup(calculation) {
         opcount = 0;
       }
       // if a number is preceeded by a '-', make it negative
-      if (calc[i] === '-' && !isNaN(calc[i + 1])) {
+      if (calc[i] === '-' && !isNaN(calc[i + 1]) && isNaN(calc[i - 1])) {
         if (calc[i + 1].includes('.')) {
           calc.splice(i, 2, parseFloat(`-${calc[i + 1]}`));
         } else {
           calc.splice(i, 2, parseInt(`-${calc[i + 1]}`));
         }
+        opcount = 0;
       } else if ((ignore.includes(calc[i])) && i === 0 ) { // removes excess operators at start
         calc.splice(i, 1);
         // go back to first index and try again
@@ -74,6 +78,12 @@ function cleanup(calculation) {
   }
 }
 
+/**
+ * filterOperations - if operations are entered in succession this function will determine the operations
+ * that take the most precidence
+ * precidence order= *, /, +, -
+ * Returns: list of operands and filtered operations
+ */
 function filterOperations(calculation) {
   let operatorCount = 0;
   let highest = null;
@@ -90,6 +100,8 @@ function filterOperations(calculation) {
     }
     if (highest && operatorCount > 1 && !isNaN(calc[i + 1])) {
       calc.splice(i - operatorCount + 1, operatorCount, highest);
+      // reset operator count since a number is encountered next
+      operatorCount = 0;
     }
   }
   return calc;
