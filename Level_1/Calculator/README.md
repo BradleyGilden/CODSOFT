@@ -1,6 +1,7 @@
 # Calculator
 
-This is CODSOFT's final Level 1 project which is a web based calculator
+This is CODSOFT's final Level 1 project which is a web based calculator.<br>
+To view application visit [coma-calc.vercel.app](https://coma-calc.vercel.app/)
 
 ## Tools
 
