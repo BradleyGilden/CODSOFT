@@ -1,9 +1,6 @@
-
-
 /** 
  * This script will controll all the calculator log for the web calculator
 */
-
 
 document.addEventListener('DOMContentLoaded', function() {
   // equation input for calc screen
