@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
   <!-- STYLES -->
   <link rel="stylesheet" href="./output.css" />
   <link rel="stylesheet" href="./custom.css" />
@@ -16,27 +17,27 @@
 <body class="bg-bg grid place-items-center min-h-screen w-screen">
   <div class="calculator flex flex-col h-[75%] w-[calc(100vh/2)] bg-bg justify-center ">
     <div class="screen bg-primary h-[20%] mx-5">
-      <div id="c-screen" type="text" class="w-[100%] h-[40%] text-[1.25rem] px-1 font-robm py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-accent2">1+2+3</div>
-      <div id="m-screen" type="text" class="w-[100%] h-[60%] text-[2.5rem] px-1 font-robm py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-fg text-end">500000000</div>
+      <div id="c-screen" type="text" class="w-[100%] h-[40%] text-[1.25rem] px-1 font-ss py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-accent2">WELCOME !!!</div>
+      <div id="m-screen" type="text" class="w-[100%] h-[60%] text-[2.5rem] px-1 font-ss py-1 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-bg text-fg text-end">0</div>
     </div>
-    <div class="numpad grid grid-cols-4 gap-2 p-5 h-[70%]">
+    <div id="numpad" class="grid grid-cols-4 gap-2 p-5 h-[70%]">
       <div id="clear" class="bg-accent2 cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-xl font-inter col-span-2 font-bold">CE</div>
-      <div data-value=" / " class="operator text-[1.5rem]">/</div>
-      <div data-value=" + " class="operator text-[2rem]">+</div>
-      <div data-value="1"   class="number   text-lg">1</div>
-      <div data-value="2"   class="number   text-lg">2</div>
-      <div data-value="3"   class="number   text-lg">3</div>
-      <div data-value="-"   class="operator text-[2rem]">-</div>
-      <div data-value="4"   class="number   text-lg">4</div>
-      <div data-value="5"   class="number   text-lg">5</div>
-      <div data-value="6"   class="number   text-lg">6</div>
-      <div data-value=" * " class="operator text-[2rem]">*</div>
-      <div data-value=""    class="number   text-lg">7</div>
-      <div data-value=""    class="number   text-lg">8</div>
-      <div data-value=""    class="number   text-lg">9</div>
-      <div data-value=""    class="bg-accent2 cursor-pointer hover:bg-accent py-4 rounded-lg text-center text-fg text-4xl font-inter row-span-2">=</div>
-      <div data-value=""    class="number   text-2xl col-span-2">0</div>
-      <div data-value=""    class="number   text-lg">•</div>
+      <div data-value="/" class="operator text-[1.5rem]">/</div>
+      <div data-value="+" class="operator text-[2rem]">+</div>
+      <div data-value="1" class="number   text-lg">1</div>
+      <div data-value="2" class="number   text-lg">2</div>
+      <div data-value="3" class="number   text-lg">3</div>
+      <div data-value="-" class="operator text-[2rem]">-</div>
+      <div data-value="4" class="number   text-lg">4</div>
+      <div data-value="5" class="number   text-lg">5</div>
+      <div data-value="6" class="number   text-lg">6</div>
+      <div data-value="*" class="operator text-[2rem]">*</div>
+      <div data-value="7" class="number   text-lg">7</div>
+      <div data-value="8" class="number   text-lg">8</div>
+      <div data-value="9" class="number   text-lg">9</div>
+      <div data-value="=" class="bg-accent2 cursor-pointer hover:bg-accent py-4 rounded-lg text-center text-fg text-4xl font-inter row-span-2">=</div>
+      <div data-value="0" class="number   text-2xl col-span-2">0</div>
+      <div data-value="." class="number   text-lg">•</div>
     </div>
   </div>
 </body>

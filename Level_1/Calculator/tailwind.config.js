@@ -25,7 +25,8 @@ module.exports = {
     },
     fontFamily: {
       'inter': ['Inter', 'sans-serif'],
-      'robm': ['"Roboto Mono"', 'sans-serif']
+      'robm': ['"Roboto Mono"', 'sans-serif'],
+      'ss': ['"Seven Segment"', '"Roboto Mono"', 'Inter', 'sans-serif']
     }
   },
   plugins: [],
