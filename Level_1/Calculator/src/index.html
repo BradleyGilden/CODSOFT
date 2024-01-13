@@ -8,27 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- STYLES -->
-  <link href="./output.css" rel="stylesheet">
-  <style>
-    ::-webkit-scrollbar {
-      width: 12px;
-      height: 12px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: #1c1c1e;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #6F34DC;
-      border-radius: 6px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #6F34DC;
-    }
-
-  </style>
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="./custom.css" />
   <!-- SCRIPTS -->
   <script defer src="./index.js"></script>
 </head>
@@ -40,22 +21,22 @@
     </div>
     <div class="numpad grid grid-cols-4 gap-2 p-5 h-[70%]">
       <div id="clear" class="bg-accent2 cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-xl font-inter col-span-2 font-bold">CE</div>
-      <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[1.5rem] leading-[1.75rem]  font-inter font-bold">/</div>
-      <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[2rem] leading-[1.75rem] font-inter font-bold">+</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">1</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">2</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">3</div>
-      <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[2rem] leading-[1.75rem]  font-inter font-bold">-</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">4</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">5</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">6</div>
-      <div class="bg-accent  cursor-pointer hover:bg-accent3 px-1 py-4  rounded-lg text-center text-fg text-[2rem] leading-[1.75rem] font-inter font-bold">*</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4 rounded-lg text-center text-fg text-lg  font-inter">7</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4 rounded-lg text-center text-fg text-lg  font-inter">8</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">9</div>
-      <div class="bg-accent2 cursor-pointer hover:bg-accent py-4 rounded-lg text-center text-fg text-4xl font-inter row-span-2">=</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-2xl font-inter col-span-2">0</div>
-      <div class="bg-primary cursor-pointer hover:bg-accent px-1 py-4  rounded-lg text-center text-fg text-lg  font-inter">•</div>
+      <div data-value=" / " class="operator text-[1.5rem]">/</div>
+      <div data-value=" + " class="operator text-[2rem]">+</div>
+      <div data-value="1"   class="number   text-lg">1</div>
+      <div data-value="2"   class="number   text-lg">2</div>
+      <div data-value="3"   class="number   text-lg">3</div>
+      <div data-value="-"   class="operator text-[2rem]">-</div>
+      <div data-value="4"   class="number   text-lg">4</div>
+      <div data-value="5"   class="number   text-lg">5</div>
+      <div data-value="6"   class="number   text-lg">6</div>
+      <div data-value=" * " class="operator text-[2rem]">*</div>
+      <div data-value=""    class="number   text-lg">7</div>
+      <div data-value=""    class="number   text-lg">8</div>
+      <div data-value=""    class="number   text-lg">9</div>
+      <div data-value=""    class="bg-accent2 cursor-pointer hover:bg-accent py-4 rounded-lg text-center text-fg text-4xl font-inter row-span-2">=</div>
+      <div data-value=""    class="number   text-2xl col-span-2">0</div>
+      <div data-value=""    class="number   text-lg">•</div>
     </div>
   </div>
 </body>
