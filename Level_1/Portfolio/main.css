@@ -88,13 +88,6 @@ iframe {
   color: #121212;
 }
 
-.pro1, .pro2, .pro3 {
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
-  opacity: 0.1;
-}
-
 img {
   max-width: 100%;
   border: none;

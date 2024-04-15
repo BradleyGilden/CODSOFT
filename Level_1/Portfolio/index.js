@@ -1,24 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
-  gsap.to(".pro1", {
-    scrollTrigger: ".pro1",
-    x: '0',
+
+  const actions = {
+    x: '-100vw',
     duration: 1,
-    opacity: 1,
-    ease: "power1.inOut"
-  });
-  gsap.to(".pro2", {
-    scrollTrigger: ".pro2",
-    x: '0',
-    duration: 1,
-    opacity: 1,
-    ease: "power1.inOut"
-  });
-  gsap.to(".pro3", {
-    scrollTrigger: ".pro3",
-    x: '0',
-    duration: 1,
-    opacity: 1,
-    ease: "power1.inOut"
-  });
+    opacity: 0.1,
+    ease: "power1.inOut",
+  }
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".projectTrigger",
+      scrub: 1,
+      end: "bottom 70%",
+    }
+  })
+  tl.from(".pro0", actions);
+  tl.from(".pro1", actions);
+  tl.from(".pro2", actions);
+  tl.from(".pro3", actions);
 });
